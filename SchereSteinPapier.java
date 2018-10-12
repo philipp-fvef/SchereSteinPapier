@@ -117,17 +117,17 @@ public class SchereSteinPapier{
 			System.out.println("Spieler 2: Papier \r");}
 
 
-		if(playerone.equals("Stein") && random == 0 || playerone.equals("Schere") && random == 1 || playerone.equals("Papier") && random == 2){
+		if(playerone.equals("Schere") && random == 0 || playerone.equals("Stein") && random == 1 || playerone.equals("Papier") && random == 2){
 				System.out.println("Unentschieden");
 		        Menu();
 		}
 
-			else if(playerone.equals("Schere") && random == 1){
+			else if(playerone.equals("Schere") && random == 2){
 				System.out.println("Du gewinnst");
 				playeronepoints++;
 			    Menu();
 			}
-			else if(playerone.equals("Schere") && random == 2){
+			else if(playerone.equals("Schere") && random == 1){
 				System.out.println("Du verlierst");
 				playertwopoints++;
 			    Menu();
